@@ -83,7 +83,7 @@
         <p class="form-note">Prefer WhatsApp? Use the floating button anytime — no form needed.</p>
 
         <div id="form-success" class="form-success">
-          <span>Thanks — we've noted your details. Tap below to send it instantly on WhatsApp too:</span>
+          <span>Failed. Tap below to send it instantly on WhatsApp:</span>
         </div>
         <a id="form-success-link" class="btn-outline" style="margin-top:14px; display:none;"></a>
       </form>
@@ -166,7 +166,7 @@
       form.addEventListener("submit", () => {
         setTimeout(() => {
           successLink.textContent = "Continue on WhatsApp →";
-          successLink.href = document.querySelector("#form-success a")?.href || "#";
+          successLink.href = "https://wa.me/918891133631";
           successLink.style.display = "inline-flex";
         }, 50);
       });
